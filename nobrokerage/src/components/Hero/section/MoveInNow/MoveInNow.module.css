@@ -1,0 +1,53 @@
+.container {
+  text-align: center;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 28px;
+  color: black;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #666; /* faint color */
+  margin-bottom: 10px;
+}
+
+.orangeLine {
+  width: 2cm;
+  height: 4px;
+  background-color: orange;
+  margin: 15px auto;
+  border-radius: 2px;
+}
+
+.boxContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 200px;
+  padding: 20px;
+  border-radius: 10px;
+  color: #43556D;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.boxTitle {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.boxDesc {
+  font-size: 14px;
+}

@@ -1,0 +1,59 @@
+.socialBar {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 9999;
+}
+
+.iconContainer {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  background: #252c41;
+  color: #fff;
+  border-radius: 6px 0 0 6px;
+  overflow: hidden; 
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.iconContainer:hover {
+  width: 160px; /* expands to show text */
+  overflow: visible;
+}
+
+.icon {
+  font-size: 18px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.label {
+  position: absolute;
+  top: 0;
+  left: 45px;
+  height: 45px;
+  background: linear-gradient(90deg, rgba(252, 144, 36, 1) 0%, rgba(255, 91, 29, 1) 100%);
+  color: #fff;
+  padding: 0 15px;
+  font-size: 14px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transform: translateX(80px); /* more offset so it "slides in" */
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  border-radius: 6px 0 0 6px;
+  pointer-events: none;
+}
+
+.iconContainer:hover .label {
+  opacity: 1;
+  transform: translateX(0); /* slide to natural position */
+}

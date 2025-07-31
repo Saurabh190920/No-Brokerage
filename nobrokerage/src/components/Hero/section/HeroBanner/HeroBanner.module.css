@@ -1,0 +1,144 @@
+.heroSection {
+  background-image: url('../../../../assets/HeroImage.jpg'); 
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 1rem;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.overlay {
+  padding: 2rem;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+  color: black;
+}
+
+.subheading {
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+  color: black;
+}
+
+.description {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  font-weight: 490;
+  color: black;
+}
+
+.imageRow {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.imageBox {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 27px;
+}
+
+.imageBox:hover {
+  background-color: rgba(255, 165, 0, 0.2); /* light orange background on hover */
+  transform: scale(1.05);
+  border: 2px solid orange;
+}
+
+
+.imageBox img {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto 0.5rem;
+}
+
+.searchContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  max-width: 700px;
+  margin: 0 auto 1rem;
+}
+
+.searchIcon {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+  color: #999;
+}
+
+.searchInput {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.filtersRow {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.dropdown {
+  background-color: white;
+  color: #333;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.searchButton {
+  background: linear-gradient(90deg, rgba(252, 144, 36, 1) 0%, rgba(255, 91, 29, 1) 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: filter 0.3s ease;
+}
+
+.searchButton:hover {
+  filter: brightness(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 2rem;
+  }
+
+  .imageRow {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filtersRow {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .searchContainer {
+    width: 90%;
+  }
+}
